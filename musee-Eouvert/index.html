@@ -1,75 +1,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Accueil</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 
 <body>
-
-    <header>
-        <legend>MUSÉE DU PRESQUE</legend>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="colelction.html">Collection</a>
-            <a href="visite.html">Visites</a>
-        </nav>
-    </header>
-    <section id="banner">
-        <img src="images/baniere/claudio-testa-iqeG5xA96M4-unsplash.jpg" alt="">
-        <h1>LE MUSÉE DES INVENTIONS RATÉES</h1>
-        <span>« Toute grande idée commence par une mauvaise. »</span>
-        <a href="#salles"><button>Voir la collection</button></a>
-    </section>
-    <section id="description_musee">
-
-        <h2>Le musée en trois chiffres</h2>
-        <div>
-            <strong>10 pièces</strong>
-            <strong>Fondée en 2026</strong>
-            <strong>0% de Taux de réeusite</strong>
+  <header>
+    <ul>
+      <li>
+        <a href="index.html">
+          <p>Musée du presque</p>
+        </a>
+      </li>
+      <li>
+        <a href="collection.html">
+          <p>Collection</p>
+        </a>
+      </li>
+      <li>
+        <a href="collection.html">
+          <p>Visiter</p>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <section id="banier">
+    <img src="images/baniere/claudio-testa-iqeG5xA96M4-unsplash.jpg" alt="">
+    <div id="banier-text">
+      <p>LE MUSÉE DES INVENTIONS RATÉES</p>
+      <h1>« Toute grande idée commence par une mauvaise. »</h1>
+      <button>voir la collection</button>
+    </div>
+  </section>
+  <section id="desciption-mus">
+    <h2>Le musée en trois chiffres</h2>
+    <div>
+      <div>
+        <p>plus de 10 inventions RATÉES</p>
+      </div>
+      <div>
+        <p>Fondee en 2026</p>
+      </div>
+      <div>
+        <p>Aucune de c'Est pieces n'as reussis</p>
+      </div>
+    </div>
+  </section>
+  <section id="salles">
+    <h2>salles</h2>
+    <div id="carte-salles">
+      <div class="carte-salle-item">
+        <img src="images/salle/hans-eiskonen-PotGJdsW06k-unsplash.jpg" alt="">
+        <div class="carte-text">
+          <h3>Salle A — Le Quotidien Réinvent</h3>
+          <p>Des objets ordinaires à qui l’on a voulu
+            donner une ambition qu’ils n’avaient pas
+            demandée</p>
+          <a href="collection.html">voir la salle</a>
         </div>
-
-    </section>
-    <section id="salles">
-        <h2>Salles</h2>
-        <div class="bloc">
-            <div class="carte_ts">
-
-                <img src="images/salle/hans-eiskonen-PotGJdsW06k-unsplash.jpg" alt="">
-                <legend>Salle A — Le Quotidien Réinventé</legend>
-                <span>Des objets ordinaires à qui l’on a voulu donner une ambition qu’ils n’avaient pas demandée</span>
-                <a href="collection.html">voir la collection</a>
-            </div>
-            <div class="carte_ts">
-                <img src="images/salle/julia-60SnthS09Ao-unsplash.jpg" alt="">
-                <legend>Salle B — L’Ambition Mécanique</legend>
-                <span>Quand l’ingénierie répond à la question
-                    avant que quiconque l’ait posée.</span>
-                <a href="collection.html">voir la collection</a>
-            </div>
-            <div class="carte_ts">
-                <img src="images/salle/julia-aX1TTOuq83M-unsplash.jpg" alt="">
-                <legend>Salle C — Les Solutions Sans Problème</legend>
-                <span>La salle préférée du public. On y entre
-                    perplexe, on en sort songeur</span>
-                <a href="collection.html">voir la collection</a>
-            </div>
+      </div>
+      <div class="carte-salle-item">
+        <img src="images/salle/julia-60SnthS09Ao-unsplash.jpg" alt="">
+        <div class="carte-text">
+          <h3>Salle B — L’Ambition
+            Mécanique</h3>
+          <p>Quand l’ingénierie répond à la question
+            avant que quiconque l’ait posée.</p>
+          <a href="collection.html">voir la salle</a>
         </div>
-    </section>
-    <footer>
-        <p>@copyright 2026</p>
-        <div class="col-lg-6 legal text-lg-center">
-            <ul>
-                <li>MUSÉE DU PRESQUE 2026 </li>
-                <li>unsplash </li>
-                <li>Cours de Programmation Web - COllàge Maisonneuve</li>
-            </ul>
+      </div>
+      <div class="carte-salle-item">
+        <img src="images/salle/julia-aX1TTOuq83M-unsplash.jpg" alt="">
+        <div class="carte-text">
+          <h3>Salle C — Les Solutions
+            Sans Problème</h3>
+          <p>La salle préférée du public. On y entre
+            perplexe, on en sort songeur.</p>
+          <a href="collection.html">voir la salle</a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <address>123 avenue Saint-Larent, Qc, Québec</address>
 
+    <p>Partenaire de la programmation éducative</p>
+
+    <ul>
+      <li>COllege Maisonneuve</li>
+      <li>unsplash</li>
+      <li>Cours de Programmation Web</li>
+    </ul>
+  </footer>
 </body>
 
 </html>
