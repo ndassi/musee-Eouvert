@@ -1,152 +1,263 @@
 body {
+  overflow-x: hidden;
+  font-family: "Luckiest Guy", cursive;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  font-family: "Aptos Display", Arial, sans-serif;
 }
-h1 {
-  font-size: 58px;
+header {
+  padding: 5px 20px;
+  color: #a4d792;
+  width: 80%;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  right: 20px;
+  background-color: #201c12c4;
+  z-index: 10;
+  margin: auto;
 }
 
-img {
-  width: 400px;
-  height: 400px;
+header,
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-h2 {
-  font-size: 48px;
+header span {
+  font-size: 44px;
+  margin: 0;
+  padding: 0;
+}
+header ul {
+  list-style: none;
+}
+header ul li {
+  margin-left: 15px;
+  font-size: 24px;
 }
 
 section {
   width: 100vw;
   height: 100vh;
-  text-align: center;
+  position: relative;
+  background-color: #201c12c4;
+}
+
+#banner {
+}
+#banner #background-teint {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #201c12;
+  top: 0;
+  opacity: 0.81;
+}
+#banner img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+#banner #banner-text {
+  position: absolute;
+  top: 34px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+  scale: 0.7;
+}
+
+#banner #banner-text h1 {
   margin: 0;
   padding: 0;
-  position: relative;
+  font-size: 117px;
+  color: #a4d792;
+  width: 100%;
+  text-align: center;
 }
-section,
-section#banier #banier-text,
-#carte-salles,
-#salles #carte-salles .carte-salle-item .carte-text,
-#desciption-mus > div {
+
+#banner #banner-text p {
+  color: #f7fdb6;
+  font-size: 37px;
+}
+
+#banner #banner-text button {
+  font-family: "Luckiest Guy", cursive;
+  color: #f7fdb6;
+  font-size: 37px;
+  background-color: #a4d7929c;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+#nos-service {
+  background-color: #a4d792;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#collections {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80vh;
+  /* background-color: blue; */
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 35px; */
+  position: relative;
+  scale: 0.8;
+}
+
+#nos-service h1 {
+  color: #f7fdb6;
+}
+
+.carte {
+  width: 26%;
+  height: 100%;
+  background-color: #201c12c4;
+  /* color:#F7FDB6 ; */
+  color: #a4d792;
+  border-radius: 20px;
+  border: 7px solid #a4d792;
+  position: relative;
+  padding: 15px;
+  box-shadow: 15px 20px 12px #201c12c4;
+}
+
+.carte div:nth-child(2) {
+  /* display: flex;
+  flex-direction: column; */
+  height: 50%;
+}
+
+.carte div:nth-child(2) div {
+  /* background-color: red; */
+  width: 100%;
+  height: 90px !important;
+  /* margin-bottom: 15px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: wrap;
+}
+
+.carte div:nth-child(2) div:nth-child(1) {
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.carte div:nth-child(2) div:nth-child(3) {
+  height: 60px !important;
+}
+
+.carte div span,
+.carte div h2,
+.carte div p,
+.carte div a {
+  margin: 0;
+  margin-bottom: 15px;
+  flex: 1;
+  width: fit-content;
+}
+
+.carte div span {
+  font-size: 18px;
+  margin: 0;
+  color: rgba(164, 215, 146, 0.5);
+}
+.carte div h2 {
+  font-size: 28px;
+  width: 100%;
+  /* padding: 15px; */
+}
+.carte div p {
+  font-family: "Lohit Devanagari";
+  font-size: 18px;
+  width: 100%;
+  padding: 15px;
+}
+.carte div button {
+  font-size: 15px;
+  background-color: rgba(164, 215, 146, 0.5);
+  font-family: "Luckiest Guy", cursive;
+  color: #f7fdb6;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.carte .img-frame {
+  max-width: 30vw;
+  height: 50%;
+  background-color: #a4d792;
+  border-radius: 20px;
+}
+.carte img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#collections .carte-2 {
+  color: #f7fdb6;
+  border-color: #f7fdb6;
+}
+
+#collections .carte-2 span {
+  color: rgba(247, 253, 182, 0.5);
+}
+
+#trois-mots {
+  text-align: center;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* background-color: red; */
 }
 
-section#banier img {
+#trois-mots h1 {
+  color: #f7fdb6;
+}
+
+#trois-mots-text {
+  /* background-color: blue; */
   width: 100%;
-  height: 100%;
-}
-
-section#banier #banier-text {
-  position: absolute;
-  color: #ffcc00;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-  align-items: start;
-  padding-left: 50px;
-}
-
-section#banier #banier-text h1,
-section#banier #banier-text p,
-section#banier #banier-text button {
-  text-align: left;
-  max-width: 50vw;
-  /* background-color: aqua; */
-  margin: 0;
-}
-
-section#banier #banier-text p {
-  color: #faf5e9;
-  width: 100%;
-  /* text-align: center; */
-  font-weight: 700;
-}
-
-section#banier #banier-text button {
-  background-color: #009b4d;
-  border: none;
-  padding: 15px;
-  border-radius: 50px;
-  font-weight: 700;
-  color: #ffcc00;
-  border: 5px solid #ffcc00;
-  transition: 0.5s;
-}
-
-section#banier #banier-text #banier #salles {
-  background-color: aliceblue;
-}
-#salles #carte-salles {
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 15px;
-}
-
-#salles #carte-salles .carte-salle-item {
-  position: relative;
-  flex: 1;
-  box-shadow: 5px 5px 30px gray;
-  max-width: 30vw;
-  max-height: 30vw;
-}
-
-#salles #carte-salles .carte-salle-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#salles #carte-salles .carte-salle-item .carte-text {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  padding: 0;
-  display: none;
-  transform: 0.5s;
-}
-
-#salles #carte-salles .carte-salle-item:hover .carte-text {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  scale: 0.8;
 }
-#salles #carte-salles .carte-salle-item .carte-text h3,
-#salles #carte-salles .carte-salle-item .carte-text p,
-#salles #carte-salles .carte-salle-item .carte-text a {
-  padding: 0 30px;
-  text-wrap: wrap;
-  max-width: 100%;
-}
-#salles #carte-salles .carte-salle-item .carte-text a {
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  border-radius: 15px;
-  padding: 5px 10px;
-  transition: 0.5s;
+#trois-mots-text div {
+  width: 30%;
+  height: 179px;
+  background-color: #a4d792;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#salles #carte-salles .carte-salle-item .carte-text a:hover {
-  color: white;
-  background-color: black;
+#trois-mots-text span {
+  font-size: 73px;
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+  color: #201c12c4;
 }
 
-#desciption-mus {
-  background-color: blanchedalmond;
-}
-
-#desciption-mus > div {
-  flex-direction: row;
-}
-
-#desciption-mus > div > div {
-  background-color: red;
-  flex: 1;
-  padding: 5vw;
-  margin: 15px;
+#trois-mots-text div:nth-child(2) {
+  background-color: #f7fdb6;
 }
