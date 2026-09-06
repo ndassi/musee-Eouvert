@@ -3,7 +3,17 @@ body {
   font-family: "Luckiest Guy", cursive;
   margin: 0;
   padding: 0;
+  background-color: #201c12;
 }
+header a {
+  color: #a4d792;
+  text-decoration: none;
+  /* transition: 0.5s; */
+}
+header ul a:hover {
+  text-decoration: underline;
+}
+
 header {
   padding: 5px 20px;
   color: #a4d792;
@@ -41,10 +51,13 @@ section {
   height: 100vh;
   position: relative;
   background-color: #201c12c4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#banner {
-}
 #banner #background-teint {
   position: absolute;
   width: 100%;
@@ -87,12 +100,19 @@ section {
 }
 
 #banner #banner-text button {
+  border: none;
   font-family: "Luckiest Guy", cursive;
   color: #f7fdb6;
+  color: #201c12c4;
   font-size: 37px;
   background-color: #a4d7929c;
   padding: 5px 20px;
   border-radius: 20px;
+}
+#banner #banner-text button:hover {
+  border: 1px solid #f7fdb6;
+  box-shadow: 1px 9px 50px #f7fdb6;
+  color: #f7fdb6;
 }
 
 #nos-service {
@@ -104,7 +124,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-#collections {
+#index-collections {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -128,10 +148,18 @@ section {
   /* color:#F7FDB6 ; */
   color: #a4d792;
   border-radius: 20px;
-  border: 7px solid #a4d792;
+  border: 7px solid #f7fdb6;
   position: relative;
   padding: 15px;
   box-shadow: 15px 20px 12px #201c12c4;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.carte:hover {
+  transform: translateY(10px);
+  box-shadow: inset 15px 20px 140px #a4d792;
 }
 
 .carte div:nth-child(2) {
@@ -182,7 +210,7 @@ section {
   /* padding: 15px; */
 }
 .carte div p {
-  font-family: "Lohit Devanagari";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   width: 100%;
   padding: 15px;
@@ -209,15 +237,25 @@ section {
   object-fit: cover;
   border-radius: 20px;
 }
+.carte .fill-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #201c12;
+  opacity: 0;
+  /* bottom: 65; */
+}
 
-#collections .carte-2 {
+/* #index-collections .carte-2 {
   color: #f7fdb6;
   border-color: #f7fdb6;
 }
 
-#collections .carte-2 span {
+#index-collections .carte-2 span {
   color: rgba(247, 253, 182, 0.5);
-}
+} */
 
 #trois-mots {
   text-align: center;
@@ -260,4 +298,112 @@ section {
 
 #trois-mots-text div:nth-child(2) {
   background-color: #f7fdb6;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+  scale: 0.9;
+  color: #a4d792;
+  background-color: #201c12;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid ;
+  padding-top: 15px;
+}
+footer h3 {
+  color: #f7fdb6;
+  text-transform: uppercase;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer #part-1 {
+  text-align: left;
+}
+
+footer #part-2 {
+  text-align: center;
+}
+
+footer #part-3 {
+  text-align: right;
+}
+.page {
+  margin-top: 72px;
+}
+
+.class-title {
+  /* background-color: blue; */
+  width: 100%;
+  text-align: center;
+  /* scale: 0.5; */
+}
+
+.class-title legend {
+  /* color: #f7fdb6; */
+  color: #a4d792;
+  font-size: 24px;
+}
+
+.class-title h1 {
+  margin-top: 0;
+  /* color: #a4d792; */
+  color: #f7fdb6;
+  font-size: 44px;
+}
+
+.gallerie {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  scale: 0.85;
+
+  /* transform:translateY(-80px) ; */
+}
+
+.gallerie .gallerie-item {
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.gallerie .img-frame {
+  width: calc(20vw - 36px);
+  height: 20vw;
+  background-color: #a4d792;
+  border: 18px solid #a4d792;
+
+  border-radius: 20px;
+}
+
+.gallerie .img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.gallerie .object-title {
+  width: 20vw;
+  height: fit-content;
+  /* background-color: yellow; */
+  text-align: center;
+  color: #a4d792;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.gallerie .object-title p {
+  margin: 0;
+}
+
+
+.page section
+{
+  border-top: 1px solid #a4d792;
 }
