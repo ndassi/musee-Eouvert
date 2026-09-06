@@ -3,98 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
   <header>
+    <span><a href="index.html">MP</a></span>
     <ul>
-      <li>
-        <a href="index.html">
-          <p>Musée du presque</p>
-        </a>
-      </li>
-      <li>
-        <a href="collection.html">
-          <p>Collection</p>
-        </a>
-      </li>
-      <li>
-        <a href="collection.html">
-          <p>Visiter</p>
-        </a>
-      </li>
+      <li><a href="index.html">ACCUEIL</a></li>
+      <li><a href="collection.html">COLLECTION</a></li>
+      <li><a href="visite.html">VISITER</a></li>
     </ul>
   </header>
-  <section id="banier">
-    <img src="images/baniere/claudio-testa-iqeG5xA96M4-unsplash.jpg" alt="">
-    <div id="banier-text">
-      <p>LE MUSÉE DES INVENTIONS RATÉES</p>
-      <h1>« Toute grande idée commence par une mauvaise. »</h1>
-      <button>voir la collection</button>
-    </div>
-  </section>
-  <section id="desciption-mus">
-    <h2>Le musée en trois chiffres</h2>
-    <div>
-      <div>
-        <p>plus de 10 inventions RATÉES</p>
+  <main>
+    <section id="banner">
+      <img src="images/baniere/claudio-testa-iqeG5xA96M4-unsplash.jpg" alt="" class="banner-background-img">
+      <div id="background-teint"></div>
+      <div id="banner-text">
+        <p>
+          << LE MUSÉE DES INVENTIONS RATÉES>>
+        </p>
+        <h1>Toute grande idée commence par une mauvaise.</h1>
+        <a href="#trois-mots"><button>VOIR LA COLLECTION</button></a>
       </div>
-      <div>
-        <p>Fondee en 2026</p>
+    </section>
+    <section id="trois-mots">
+      <h1>NOUS EN 3 MOTS</h1>
+      <div id="trois-mots-text">
+        <div><span>10 PIECES</span></div>
+        <div><span>DEPUIS 2026</span></div>
+        <div><span>TOUS DES ECHECS</span></div>
       </div>
-      <div>
-        <p>Aucune de c'Est pieces n'as reussis</p>
-      </div>
-    </div>
-  </section>
-  <section id="salles">
-    <h2>salles</h2>
-    <div id="carte-salles">
-      <div class="carte-salle-item">
-        <img src="images/salle/hans-eiskonen-PotGJdsW06k-unsplash.jpg" alt="">
-        <div class="carte-text">
-          <h3>Salle A — Le Quotidien Réinvent</h3>
-          <p>Des objets ordinaires à qui l’on a voulu
-            donner une ambition qu’ils n’avaient pas
-            demandée</p>
-          <a href="collection.html">voir la salle</a>
+    </section>
+    <section id="nos-service">
+      <h1>NOS SALLES</h1>
+      <div id="index-collections">
+        <div class="carte carte-1 ">
+
+          <div class="img-frame">
+            <img src="images/salle/hans-eiskonen-PotGJdsW06k-unsplash.jpg" alt="">
+
+          </div>
+          <div>
+            <div>
+              <span>SALLE A</span>
+              <h2>Le Quotidien Réinventé</h2>
+            </div>
+            <div>
+              <p>Des objets ordinaires à qui l’on a voulu donner une ambition qu’ils n’avaient pas demandée</p>
+            </div>
+            <div>
+              <a class="fill-link" href="collection.html#salle-a"></a>
+              <a href="collection.html#salle-a"><button>VOIR LA COLLECTION</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="carte carte-2">
+          <div class="img-frame">
+            <img src="images/salle/julia-60SnthS09Ao-unsplash.jpg" alt="">
+          </div>
+          <div>
+            <div>
+              <span>SALLE B</span>
+              <h2>L’Ambition Mécanique</h2>
+            </div>
+            <div>
+              <p>Quand l’ingénierie répond à la question avant que quiconque l’ait posée.</p>
+            </div>
+            <div>
+              <a class="fill-link" href="collection.html#salle-b"></a>
+              <a href="collection.html#salle-b"><button>VOIR LA COLLECTION</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="carte carte-3">
+          <div class="img-frame">
+            <img src="images/salle/julia-aX1TTOuq83M-unsplash.jpg" alt="">
+          </div>
+          <div>
+            <div>
+              <span>SALLE C</span>
+              <h2>Les Solutions Sans Problème</h2>
+            </div>
+            <div>
+              <p>La salle préférée du public. On y entre perplexe, on en sort songeur.</p>
+            </div>
+            <div>
+              <a class="fill-link" href="collection.html#salle-c"></a>
+              <a href="collection.html#salle-c"><button>VOIR LA COLLECTION</button></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="carte-salle-item">
-        <img src="images/salle/julia-60SnthS09Ao-unsplash.jpg" alt="">
-        <div class="carte-text">
-          <h3>Salle B — L’Ambition
-            Mécanique</h3>
-          <p>Quand l’ingénierie répond à la question
-            avant que quiconque l’ait posée.</p>
-          <a href="collection.html">voir la salle</a>
-        </div>
-      </div>
-      <div class="carte-salle-item">
-        <img src="images/salle/julia-aX1TTOuq83M-unsplash.jpg" alt="">
-        <div class="carte-text">
-          <h3>Salle C — Les Solutions
-            Sans Problème</h3>
-          <p>La salle préférée du public. On y entre
-            perplexe, on en sort songeur.</p>
-          <a href="collection.html">voir la salle</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
   <footer>
-    <address>123 avenue Saint-Larent, Qc, Québec</address>
+    <div id="part-1">
+      <h3>le musée des inventions ratées</h3>
+      <ul>
+        <li>123 Rue Saint-Laurent,</li>
+        <li>H2M1 5M8,</li>
+        <li>Qc, Quebec,</li>
+        <li>Canda.</li>
+      </ul>
+    </div>
+    <div id="part-2">
+      <h3>crédit</h3>
+      <ul>
+        <li>Unsplash.com</li>
+        <li>claudio-testa-</li>
+        <li>hans-eiskonen</li>
+        <li>amir-shamsipur</li>
+        <li>engin-akyurt</li>
+        <li>katherine-kromberg</li>
+        <li>maria-cortes</li>
+        <li>matt-popovich</li>
+        <li>mitchell-luo</li>
+        <li>pablo-hernandez</li>
+        <li>umberto</li>
+        <li>vik-shen</li>
+        <li>julia</li>
+      </ul>
 
-    <p>Partenaire de la programmation éducative</p>
-
-    <ul>
-      <li>COllege Maisonneuve</li>
-      <li>unsplash</li>
-      <li>Cours de Programmation Web</li>
-    </ul>
+    </div>
+    <div id="part-3">
+      <h3>PROGRAMME</h3>
+      <ul>
+        <li>Collège Maisonneuve, Montréal</li>
+        <li>Cours-Programmation Web</li>
+        <li>Quebec</li>
+        <li>Canada</li>
+        <li>@copyright 2026</li>
+      </ul>
+    </div>
   </footer>
+
 </body>
 
 </html>
