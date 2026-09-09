@@ -422,19 +422,30 @@ footer #part-3 {
   right: 0;
   bottom: 0;
   /* background: rgba(0, 0, 0, 0.6); */
-  background: red;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   z-index: 10;
+  background-color: #f7fdb63b;
 }
 
 .gallerie .modal:target {
   opacity: 1;
   visibility: visible;
+}
+
+.gallerie .modal .close-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 11;
 }
 
 .gallerie .modal-content {
@@ -448,6 +459,8 @@ footer #part-3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 12;
+  background-color: #f7fdb6;
 }
 .gallerie .modal-content .close-btn-div {
   width: 100%;
@@ -455,35 +468,38 @@ footer #part-3 {
   height: 30px;
   position: absolute;
   top: 0;
+  right: 0;
   text-align: right;
   justify-content: right;
-  align-items: right ;
-
+  align-items: right;
 }
 .gallerie .modal-content .close-btn-div .close-btn {
-  color: white;
-  font-size: 24px;
+  color: red;
+  font-size: 34px;
   z-index: 100;
-  font-weight: 100;
+  font-weight: 500;
   /* width: 30px;
   height: 30px; */
   opacity: 1;
   margin: 0;
   padding: 0;
   width: fit-content;
-    height: fit-content;
-    position: initial;
-    padding: 0 10px;
-    text-decoration: none;
-    background-color: red;
-
+  height: fit-content;
+  position: initial;
+  padding: 0 10px;
+  text-decoration: none;
+  background-color: transparent;
+  /* background-color: red; */
 }
 .gallerie .modal-content .img-frame {
   width: 100%;
   border: none;
+  border-radius: 0px;
+  background-color: #f7fdb6;
+}
+.gallerie .modal-content .img-frame img {
   border-radius: 0;
 }
-
 .gallerie .modal-content .text-bloc div {
   display: flex;
   justify-content: space-between;
@@ -493,6 +509,7 @@ footer #part-3 {
   margin-left: 20px;
   font-size: 14;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
 }
 
 /* .close-btn {
